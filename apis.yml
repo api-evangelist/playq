@@ -1,7 +1,23 @@
 aid: playq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/playq.png
 name: PlayQ
-description: PlayQ is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: PlayQ is a Los Angeles-based mobile game developer and publisher creating free-to-play
+  games for a global audience, including titles such as Charm King and Treasure Party. The company
+  was surfaced as a portfolio company of Techstars and added to the API Evangelist network. As of
+  this enrichment pass PlayQ operates a consumer-facing marketing and game-support website with no
+  public developer portal, API documentation, or API surface; player support is routed through
+  per-game Zendesk help centers.
 url: https://raw.githubusercontent.com/api-evangelist/playq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Gaming
+- Mobile Games
+- Game Development
+- Entertainment
+- Free-to-Play
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/playq-domain-security.yml
 - type: Website
   url: https://playq.com/
+- type: Support
+  url: https://playq.com/support
+- type: TermsOfService
+  url: https://playq.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://playq.com/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
